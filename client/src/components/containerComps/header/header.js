@@ -9,8 +9,8 @@ function Header() {
         <p class="lead">
           Book Search Engine, powered by Google Books API
         </p>
-        <a class="btn btn-primary btn-lg links" href="#" role="button">Search</a>
-        <a class="btn btn-primary btn-lg links" href="#" role="button">Saved</a>
+        <a href="/search" class="btn btn-primary btn-lg links" role="button">Search</a>
+        <a href="/saved" class="btn btn-primary btn-lg links" role="button">Saved</a>
       </div>
     </div>
   );

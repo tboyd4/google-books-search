@@ -24,7 +24,7 @@ app.delete("/api/books/:id", (req, res) => {
   res.send("I will delete the book");
 });
 
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
