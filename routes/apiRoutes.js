@@ -2,7 +2,7 @@ const Books = require('../models/books');
 
 module.exports = function (app) {
   app.get("/api/books", (req, res) => {
-    Books.find((data) => {
+    Books.find((err, data) => {
         console.log(data);
         res.send(data);
     });
