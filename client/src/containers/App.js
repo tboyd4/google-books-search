@@ -14,19 +14,19 @@ import Search from '../components/searchPage/search';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Router>
-        <Switch>
-          <Route path="/search">
-            <Search />
-          </Route>
-          <Route path="/saved">
-            <Saved />
-          </Route>
-          <Route path="/">
-            <Search />
-          </Route>
-        </Switch>
+    <Header />
+    <Router>
+      <Switch>
+        <Route path="/search">
+          <Search />
+        </Route>
+        <Route path="/saved">
+          <Saved />
+        </Route>
+        <Route path="/">
+          <Search />
+        </Route>
+      </Switch>
     </Router>
       
     </div>
