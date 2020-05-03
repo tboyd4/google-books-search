@@ -13,17 +13,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // api routes
-app.get("/api/books", (req, res) => {
-  res.send("I will get the books");
-});
-
-app.post("/api/books", (req, res) => {
-  res.send("I will create a book");
-});
-
-app.delete("/api/books/:id", (req, res) => {
-  res.send("I will delete the book");
-});
+require('./routes/apiRoutes')(app);
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
