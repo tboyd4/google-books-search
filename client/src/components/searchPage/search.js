@@ -2,10 +2,10 @@ import React from "react";
 
 import SearchBar from './searchComps/searchbar';
 
-function Search(props) {
+function Search() {
   return (
-    <div class="container"> 
-      <SearchBar click={props.click} />
+    <div className="container"> 
+      <SearchBar />
 
     </div>
   );
